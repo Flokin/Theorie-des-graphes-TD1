@@ -1,0 +1,12 @@
+On doit demontrer que le nombre d'arêtes, m, est inférieur ou égale au nombre de sommet au carré diviser par 4. 
+Pour cela, nous allons réaliser un raisonement par l'absurde :
+
+Pour demontrer que m <|= n²/4, supposons que m >|=n²/4 ;
+
+Si m >|=n²/4, alors, pour un graphe bipaire a 5 sommets et 6 arêtes, en utilisant la propriétés suivante on a :
+
+                                 	6 >|= 5*5/4	        soit        	6 >|= 6.25
+                                  
+On vois que pour cette exemple, la propriété n'est pas verifier car m est inférieur à 6.25, 
+Or pour démontrer par l'absurde, montrer qu'un exemple est faux est affirmer que la propriété initial est vrai,
+Donc par l'absurde, m <|= n²/4.
