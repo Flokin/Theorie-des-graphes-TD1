@@ -1,15 +1,27 @@
 Pour cette exercice, on cherche a prouver par l'absurde que un pont ne peux faire partie d'un cycle. 
 Pour cela, on suppose que une arête est un pont si et seulement si elle fait partie d'un cycle.
 
-Prenons comme exemple un graphe orienté de 2 sommet avec chacun deux arrétes, c'est arêtes forme un circuit.
-Si l'on supprime l'une des deux arêtes aléatoirements, le circuit est coupé, mais le graphe reste connexe. 
+Prenons comme exemple un graphe orienté de 2 sommet avec chacun deux arrétes, c'est arêtes forme un cycle.
+Si l'on supprime l'une des deux arêtes aléatoirements, le cycle est coupé, mais le graphe reste connexe. 
 Or pour qu'une arête soit dit "pont", la connexité du graphe doit reposé sur sa présence.
-Donc par l'absurde, on peut dire qu'une arête est un pont si et seulement si elle n'appartient a aucun circuit.
+Donc par l'absurde, on peut dire qu'une arête est un pont si et seulement si elle n'appartient a aucun cycle.
 
 
 
 On suppose un cycle quelconque de G. Nous avons démontrer précèdement que un graphe ne peut posséder de pont
-dans un circuit.
+dans un cycle.
 Pour qu'un graphe soit connexe, il doit posséder au moins une arête par point permettant de relier les autres points,
-formant ainsi un circuit.
-Si un graphe connéxe posséde un pont, celui si ne peux étre
+formant ainsi un cycle.
+Si un graphe connéxe posséde un pont,et si l'on oriente ses arêtes, le pont empéchera de former un circuit en empéchant une 
+partie du graphe de ce relier au reste. 
+Il est alors logique que un graphe G connexe, qui ne posséde pas de pont est fortement orientable.
+
+
+Dans les exercices précédent, nous avons montrer que il est possible de rendre un graphe orienté sous certaine condition.
+Nous travaillons maintenant sur le cas de l'exercice, le réseau de rue. 
+On cherche a rendre les rues d'une portions de route a sense unique tout en gardant la possibilité de rejoindre tout les points.
+Pour cela, le circuit doit ne posséder aucun pont, et étre connexe;
+Pour que, dans un graphe orienté, nous puissions rejoindre tout les points entre eux, il est nécessaire d'avoir un nombre d'arête
+suffisament grand pour qu'il existe un nombre K de supprésion d'arête permettant de garder une connexité du circuit.
+Néanmoins, il doit y avoir un nombre d'arête supérieur a ce que k-1 rend la connexité impossible. 
+Dans ces conditions, il est possible de relier tout les points, avec la mis en place d'un sens unique. 
