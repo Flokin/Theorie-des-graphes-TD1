@@ -1,0 +1,15 @@
+Pour cette exercice, on cherche a prouver par l'absurde que un pont ne peux faire partie d'un cycle. 
+Pour cela, on suppose que une arête est un pont si et seulement si elle fait partie d'un cycle.
+
+Prenons comme exemple un graphe orienté de 2 sommet avec chacun deux arrétes, c'est arêtes forme un circuit.
+Si l'on supprime l'une des deux arêtes aléatoirements, le circuit est coupé, mais le graphe reste connexe. 
+Or pour qu'une arête soit dit "pont", la connexité du graphe doit reposé sur sa présence.
+Donc par l'absurde, on peut dire qu'une arête est un pont si et seulement si elle n'appartient a aucun circuit.
+
+
+
+On suppose un cycle quelconque de G. Nous avons démontrer précèdement que un graphe ne peut posséder de pont
+dans un circuit.
+Pour qu'un graphe soit connexe, il doit posséder au moins une arête par point permettant de relier les autres points,
+formant ainsi un circuit.
+Si un graphe connéxe posséde un pont, celui si ne peux étre
