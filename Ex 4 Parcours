@@ -1,0 +1,11 @@
+G = (V,E) graphe complet orienté a n sommet.
+
+Pour prouvez que tout tournoi comporte un circuit hamiltonien, nous supposons par recurrence que :
+soit un tournoi G a n+1 sommets et un point m de V.
+Nous établissons l'hypothése que il existe au moins un chemin orienté pour V/m.
+Si pour n , il existe un indice maximale tel que Vn(n<i), et qu'il existe une arréte orienté de n à m,
+alors pour n+1 il existe aussi.
+Soit un graphe orienté complet aléatoire. Pour un indice maximale i, il existe un chemin orieenté passant par tout les
+sommets du graphe pour n. 
+Alors pour n+1 il existe également. 
+Donc par récurrence, pour un tornoi, cette propriété existe pour un tournoi à au moins deux sommets. 
